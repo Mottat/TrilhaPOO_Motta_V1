@@ -9,6 +9,9 @@ public class DescQTD {
     private double taxaDesconto;
     private double valorUnitario;
     private double total;
+    private double totalFinal;
+
+
 
     public DescQTD() {
         this.taxaDesconto = taxaDesconto;
@@ -32,11 +35,17 @@ public class DescQTD {
 
     public void setMeioPag(int meioPag) { this.meioPag = meioPag; }
 
+    public double getTotalFinal() { return totalFinal; }
+
+    public void setTotalFinal(double totalFinal) { this.totalFinal = totalFinal; }
+
+
     public void calculoCompra(){
         double total = 0;
 
         setTotal((getQuantidade() * getValorUnitario()));
         double valorTotalComDesconto = getTotal() - (getTaxaDesconto() * getTotal());
+
         if (getMeioPag() == 1){
             double descMeioPag = valorTotalComDesconto * 0.05;
             total = valorTotalComDesconto - descMeioPag;
@@ -46,6 +55,9 @@ public class DescQTD {
             double acresMeioPag = valorTotalComDesconto * 0.03;
             total = valorTotalComDesconto + acresMeioPag;
         }
-        System.out.println("\nTotal da compra: " + NumberFormat.getCurrencyInstance().format(total));
+
+        setTotalFinal(total + getTotalFinal());
+
+        System.out.println("\nTotal da compra: " + NumberFormat.getCurrencyInstance().format(getTotalFinal()));
     }
 }
