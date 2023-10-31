@@ -8,9 +8,3 @@ enum TipoVeiculo {
     CAMINHAO;
 
 }
-
-
-// Enum para estados de conservação
-enum EstadoConservacao {
-    NOVO, QUEBRADO
-}
