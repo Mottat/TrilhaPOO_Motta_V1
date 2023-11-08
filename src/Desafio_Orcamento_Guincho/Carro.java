@@ -5,9 +5,7 @@ public class Carro implements Veiculo{
     private TipoVeiculo tipo;
     private EstadoConservacao estado;
 
-    public void setTipo(TipoVeiculo tipo) {
-        this.tipo = tipo;
-    }
+    public Carro() { this.tipo = TipoVeiculo.CARRO; }
 
     public void setEstado(EstadoConservacao estado) {
         this.estado = estado;
