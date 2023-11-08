@@ -1,5 +1,6 @@
 package Desafio_Orcamento_Guincho;
 
-public interface Guincho {
+// Interface para tipos de guincho
+interface Guincho {
     double calcularCustoDeslocamento(Trajeto trajeto);
 }
