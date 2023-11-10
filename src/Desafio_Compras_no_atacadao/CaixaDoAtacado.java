@@ -19,7 +19,6 @@ public class CaixaDoAtacado {
         } else {
             DescQTD.setTaxaDesconto(0.25);
             DescQTD.calculoCompra();
-
         }
     }
 }

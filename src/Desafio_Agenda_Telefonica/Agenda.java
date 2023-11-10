@@ -1,6 +1,5 @@
 package Desafio_Agenda_Telefonica;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 

@@ -34,7 +34,7 @@ public class AgendaTelefonica {
     public void removerContato(){
         Iterator<Contato> iterator = contatos.iterator();
         listarContatos();
-        System.out.print("\nInforme a posição que deseja remover: ");
+        System.out.print("\nInforme o nome do contato que deseja remover: ");
         String cont = teclado.nextLine();
 
         while (iterator.hasNext()) {

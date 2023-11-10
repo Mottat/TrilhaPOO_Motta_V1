@@ -1,7 +1,5 @@
 package Desafio_Compras_no_atacadao;
 
-import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
-
 public class Produtos {
 
     private int id;
